@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.blue_background{
+    background-image: url('/images/mobile/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 503px;
+    width: 100%;
+}
+.navbar{
+    padding-top: 27px;
+    padding-inline: 12px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.menu_links{
+    list-style: none;
+    padding-block: 10px;
+    display: none;
+
+}
+.menu_links a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+}
+.hamburger_icon{
+    display: block;
+    position: absolute;
+    right: 17px;
+    top: 31px;
+}
+ .tag{
+    margin-top: 83px;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+ }
+ .tag h1{
+     font-weight: 900;
+     color: white;
+     font-size: 3.5rem;
+     position: absolute;
+     top: -14px;
+ }
