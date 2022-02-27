@@ -1,55 +1,523 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .blue_background{
     background-image: url('/images/mobile/image-header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 503px;
+    height: 580px;
     width: 100%;
-}
-.navbar{
-    padding-top: 27px;
-    padding-inline: 12px;
-    display: flex;
-    justify-content: space-between;
     position: relative;
-}
-.menu_links{
-    list-style: none;
-    padding-block: 10px;
-    display: none;
+    padding-top: 24px;
 
 }
-.menu_links a{
+
+/* nav */
+
+header a {
     text-decoration: none;
+}
+  
+header {
+    margin: 0px 35px;
+    padding: 0 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+#brand{
+    margin-top: 18px;
+}
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+ul a {
     color: white;
+    font-family: 'Fraunces';
     font-size: 16px;
-    font-weight: 700;
+  }
+  ul a:hover{
+      background-color: white;
+      color: black;
+      text-transform: uppercase;
+      overflow: hidden;
+  } 
+  
+  ul li {
+    padding: 5px;
+    margin-left: 35px;
+    border-radius: 18px;
+    overflow: hidden;
+
+  }
+  
+  /* ul li:hover {
+    /* transform: scale(1.1); */
+    /* transition: 0.3s; */
+   
+  /*} */
+  
+  #hamburger-icon {
+    margin: auto 0;
     display: block;
-}
-.hamburger_icon{
-    display: block;
+    cursor: pointer;
+  }
+  
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mobile-menu{
+    display: none;
     position: absolute;
-    right: 17px;
-    top: 31px;
-}
- .tag{
-    margin-top: 83px;
+    top: 66px;
+    right: 0;
+    height: calc(100vh - 50px);
+    margin-right: 52px;
+    margin-top: 24px;
+    height: 330px;
+    width: 80%;
+    background-color: white;
+    padding-top: 40px;
+    font-weight: 900;
+    font-size: 18px;
+    z-index: 9999;
+  }
+
+  .mobile-menu a{
+      color: hsl(210, 4%, 67%);
+      line-height: 3;
+      text-transform: capitalize;
+      font-weight: 900;
+      font-family: 'Fraunces';
+      
+  }
+
+  .mobile-menu a:hover{
+    background-color:hsl(51, 100%, 49%);
+    line-height: 3;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-family: 'Fraunces';
+    padding: 8px 18px;
+    border-radius: 18px;
     text-align: center;
-    position: relative;
+    
+}
+
+.tag{
+    position: absolute;
+    margin-top: 72px;
+    text-align: center;
     text-transform: uppercase;
  }
  .tag h1{
-     font-weight: 900;
-     color: white;
-     font-size: 3.5rem;
-     position: absolute;
-     top: -14px;
+    font-weight: 900;
+    color: white;
+    font-size: 3.1rem;
+    margin-top: -10px;
+    font-family: 'Fraunces';
+
+}
+.tag p{
+    margin-top: 38px;
+
+}
+.brand_tag{
+   
+    text-align: center;
+    padding-bottom: 40px;
  }
+ .brand_tag h3{
+    font-size: 34px;    
+    font-family: 'Fraunces';
+    font-weight: 900;
+    padding-top: 20px;
+}
+ .brand_tag a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Fraunces;
+        
+}
+ .brand p{
+    font-size: 14.9px;
+    padding-top: 13px;
+    line-height: 1.5;
+    padding: 16px;
+    font-family: 'Barlow';
+    font-weight: 600;
+    color: hsl(210, 4%, 67%);
+} 
+.stand_out_paragraph{
+    text-align: center;
+    margin-block: 29px;
+}
+.stand_out_paragraph h3{
+    font-size: 34px;    
+    font-family: 'Fraunces';
+    font-weight: 900;
+    padding-top: 20px;
+}
+.stand_out_paragraph p{
+    font-size: 14.9px;
+    padding-top: 13px;
+    line-height: 1.5;
+    padding: 16px;
+    font-family: 'Barlow';
+    font-weight: 600;
+    color: hsl(210, 4%, 67%);
+
+}
+.stand_out_paragraph a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Fraunces;
+}
+.design{
+    background-image: url(/images/mobile/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 591px;
+    width: 100%;
+    padding-top: 362px;
+    text-align: center;
+}
+.design h3{
+    font-size: 29px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    color: hsl(167, 40%, 24%);
+}
+.design p{
+    font-size: 19px;
+    padding-top: 13px;
+    line-height: 1.5;
+    padding: 16px;
+    font-family: 'Barlow';
+    font-weight: 600;
+    color: hsl(167, 40%, 24%);
+}
+.photography{
+    background-image: url(/images/mobile/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 591px;
+    width: 100%;
+    padding-top: 393px;
+}
+.photography h3{
+    font-size: 29px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    color: hsl(198, 62%, 26%);
+}
+.photography p{
+    font-size: 19px;
+    padding-top: 13px;
+    line-height: 1.5;
+    padding: 16px;
+    font-family: 'Barlow';
+    font-weight: 600;
+    color: hsl(198, 62%, 26%);
+}
+.client_testimonials{
+    text-align: center;
+    padding-top: 60px;
+}
+.client_testimonials h3{
+    font-size: 22px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    text-transform: uppercase;
+    color: hsl(232, 10%, 55%);
+    padding-bottom: 6px;
+    letter-spacing: .2rem;
+}
+.testimonials h5{
+    font-size: 18px;
+    font-family: 'Fraunces';
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+    padding-bottom: 6px;
+    /* letter-spacing: .2rem; */
+}
+.role{
+    font-size: 18px;
+    font-family: 'Barlow';
+    font-weight: 900;
+    color: hsl(213, 9%, 39%);
+    padding-bottom: 6px;
+    
+}
+.client_photo{
+    border-radius: 50%;
+    margin-top: 40px;
+    width: 48px;
+}
+.testimonial_para{
+    font-size: 19px;
+    padding-top: 13px;
+    line-height: 1.5;
+    padding: 16px;
+    font-family: 'Barlow';
+    font-weight: 600;
+    color: hsl(232, 10%, 55%);
+}
+.images_inlined{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin-top: 40px;
+    /* margin-bottom: -4px; */
+}
+
+.images_inlined img{
+    width: 100%;
+}
+
+
+footer{
+    margin: 0;
+    padding: 12px;
+    padding-top: 20px;
+    text-align: center;
+    background-color: hsl(168, 34%, 41%);
+    width: 100%;;
+}
+.footer_logo{
+    color: hsl(167, 40%, 24%);
+    margin: 20px;
+
+}
+.footer_menu span{
+    margin-inline: 5px;
+    font-size: 19px;
+    padding-top: 13px;
+    line-height: 1.5;
+    padding: 16px;
+    font-family: 'Barlow';
+    font-weight: 600;
+    color: hsl(167, 40%, 24%);
+}
+.footer_icons{
+    padding-block: 30px;
+    text-align: center;
+
+}
+.footer_icons span{
+    padding-inline: 20px;
+}
+
+header nav {
+    display: none;
+  }
+
+
+/* media query */
+@media only screen and (min-width: 1000px) {
+    
+    header nav {
+      display: block;
+    }
+  
+    #hamburger-icon {
+      display: none;
+    }
+    
+    .blue_background{
+        background-image: url('/images/desktop/image-header.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        width: 100%;
+        position: relative;
+        padding-top: 24px;
+
+    
+    }
+    .tag{
+        position: relative;
+        margin-top: 48px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .tag h1{
+        padding-top: 56px;
+        margin: 0 auto;
+    }
+    .arrow_down{
+        padding-top: 40px;
+        margin: 0 auto;    
+    }
+    .brand{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        position: relative;
+    }
+    .egg_image{
+        width: 100%;
+        
+    }
+    .brand_tag{
+        
+        display: grid;
+        place-items: center;
+        text-align: start;
+        width: 100%;
+        
+    }
+    .brand_tag h3{
+        font-size: 47px;
+        font-family: 'Fraunces';
+        font-weight: 900;
+        padding-top: 20px;
+    }
+    .content{
+        font-size: 18px;
+        width: 80%;
+    }
+    .brand_tag p {
+        font-size: 20px;
+        padding-top: 13px;
+        line-height: 1.5;
+        padding: 16px;
+        font-family: 'Barlow';
+        font-weight: 600;
+        color: hsl(210, 4%, 67%);
+    }
+    .brand_tag a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: Fraunces;
+    }
+    .stand_out{
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        margin-bottom: -4px;    
+    }
+    .stand_out_image{
+        width: 100%;
+
+    }
+    .stand_out_paragraph{
+        display: grid;
+        place-items: center;
+        text-align: start;
+        width: 100%;
+    }
+    .stand_out_paragraph h3{
+        font-size: 45px;
+        font-family: 'Fraunces';
+        font-weight: 900;
+        padding-top: 20px;
+    }
+    .stand_out_paragraph p{
+        font-size: 19.5px;
+        padding-top: 13px;
+        line-height: 1.5;
+        padding: 16px;
+        font-family: 'Barlow';
+        font-weight: 600;
+        color: hsl(210, 4%, 67%);
+    }
+    .stand_out_paragraph a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: Fraunces;
+    }
+    .design_photography{
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+    }
+    .design{
+        width: 100%;
+    }
+    .photography{
+        width: 100%;
+    }
+    .testimonials{
+        display: flex;
+        justify-content: space-evenly;
+        padding-inline: 50px;
+    }
+    .testimonial_para{
+        font-size: 18px;
+        /* padding-inline: 30px; */
+    }
+   .real_egg_img{
+       height: 100%;
+   }
+   .design {
+    background-image: url(/images/desktop/image-graphic-design.jpg);
+  }
+  .photography {
+    background-image: url(/images/desktop/image-photography.jpg);
+    
+  }
+  .images_inlined{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+    margin-bottom: -4px;
+}
+
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
