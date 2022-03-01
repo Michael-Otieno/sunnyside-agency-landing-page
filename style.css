@@ -27,8 +27,6 @@
     padding-top: 20px;
     padding-inline: 20px;
 }
-
-
 .nav__link{
     position: absolute;
     width: 88%;
@@ -54,37 +52,38 @@
     text-transform: capitalize;
     width: -moz-fit-content;
     width: fit-content;
-  }
-
-  .nav__link a:hover{
+}
+.nav__link a:hover{
     background-color:yellow;
     text-transform: uppercase;
     border-radius: 20px;
     font-weight: 900;
     color: hsl(210, 4%, 67%);
-    padding: 2px 1px 0;
-    
-  
-    /* width: 100px; */
-    /* height: 20px; */
+    padding: 5px 10px;
+    font-size: 1rem;
 
 }
+.nav__link .active{
+    background-color:yellow;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
 
-  .triangle_border{
-    
+}
+.triangle_border{  
     position: absolute;
     width: 0;
-    left: 87.3%;
+    left: 74.6%;
     height: 0;
-    border-left: 25px solid transparent;
+    border-left: 70px solid transparent;
     border-right: 0px solid transparent;
-    border-bottom: 50px solid white;
-    top: 13%;
-  }
-  .hide {
+    border-bottom: 63px solid white;
+    top: 14%;
+}
+.hide {
     display: none;
-  }
-
+}
 
 .tag{
     position: absolute;
@@ -104,7 +103,6 @@
   }
 
 .brand_tag{
-   
     text-align: center;
     padding-bottom: 40px;
  }
@@ -114,8 +112,17 @@
     font-weight: 900;
     padding-top: 20px;
 }
- .brand_tag a{
-    text-decoration: none;
+
+ .brand_tag p{
+    font-size: 19px;
+    padding-top: 13px;
+    line-height: 1.5;
+    padding: 16px;
+    font-family: 'Barlow';
+    font-weight: 600;
+    color: hsl(210, 4%, 67%);
+} 
+.brand_tag a{
     text-decoration-style: solid;
     text-decoration-color: hsl(51, 100%, 49%);
     text-decoration-thickness: 5px;
@@ -126,27 +133,19 @@
     font-family: 'Fraunces';
         
 }
- .brand p{
-    font-size: 14.9px;
-    padding-top: 13px;
-    line-height: 1.5;
-    padding: 16px;
-    font-family: 'Barlow';
-    font-weight: 600;
-    color: hsl(210, 4%, 67%);
-} 
+
 .stand_out_paragraph{
     text-align: center;
     margin-block: 29px;
 }
 .stand_out_paragraph h3{
-    font-size: 34px;    
+    font-size: 44px;    
     font-family: 'Fraunces';
     font-weight: 900;
     padding-top: 20px;
 }
 .stand_out_paragraph p{
-    font-size: 14.9px;
+    font-size: 19px;
     padding-top: 13px;
     line-height: 1.5;
     padding: 16px;
@@ -156,7 +155,6 @@
 
 }
 .stand_out_paragraph a{
-    text-decoration: none;
     text-decoration-style: solid;
     text-decoration-color: hsl(7, 99%, 70%);
     text-decoration-thickness: 5px;
@@ -236,10 +234,10 @@
     /* letter-spacing: .2rem; */
 }
 .role{
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Barlow';
     font-weight: 900;
-    color: hsl(213, 9%, 39%);
+    color: hsl(210, 4%, 67%);
     padding-bottom: 6px;
     
 }
@@ -310,6 +308,20 @@ footer{
 
 /* media query */
 @media only screen and (min-width: 1000px) {
+    .blue_background{
+        background-image: url('/images/desktop/image-header.jpg');
+        height: 700px;
+
+        /* background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        width: 100%;
+        position: relative;
+        padding-top: 24px; */
+
+    
+    }
+
     .nav{
         padding-top: 0px;
         margin-inline: 20px;
@@ -329,7 +341,7 @@ footer{
        text-transform: capitalize;
        margin-inline: 20px;
        text-decoration: none;
-       padding: 2px 1px 0;
+       padding: 0;
        font-family: 'Fraunces';
        font-weight: 600;
        font-size: 18px;
@@ -339,32 +351,28 @@ footer{
 
    }
    .nav__link a:hover {
-        background-color:hsl(0, 0%, 100%);
+        background-color:transparent;
+        padding: 5px 10px;
+        font-weight: 700;
         color: black;
         font-size: 14px;
         text-align: center;
         border-radius: 20px;
         text-transform: uppercase;
   }
+  .nav__link .active{
+    background-color:white;
+    color: black;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+
+}
    .hamburger,.triangle_border{
        display: none;
    }
- 
 
-
-
-
-    .blue_background{
-        background-image: url('/images/desktop/image-header.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 700px;
-        width: 100%;
-        position: relative;
-        padding-top: 24px;
-
-    
-    }
     .tag{
         position: relative;
         margin-top: 48px;
@@ -391,7 +399,6 @@ footer{
         
     }
     .brand_tag{
-        
         display: grid;
         place-items: center;
         text-align: start;
@@ -400,30 +407,17 @@ footer{
     }
     .brand_tag h3{
         font-size: 47px;
-        font-family: 'Fraunces';
-        font-weight: 900;
-        padding-top: 20px;
+        /* font-family: 'Fraunces'; */
+        /* font-weight: 900; */
+        /* padding-top: 20px; */
     }
-    .content{
+    .brand_content{
         font-size: 18px;
         width: 80%;
     }
-    .brand_tag p {
-        font-size: 20px;
-        padding-top: 13px;
-        line-height: 1.5;
-        padding: 16px;
-        font-family: 'Barlow';
-        font-weight: 600;
-        color: hsl(210, 4%, 67%);
-    }
-    .brand_tag a {
-        text-decoration: none;
-        color: black;
-        font-size: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
-        font-family: Fraunces;
+   
+    .brand_tag a {  
+        font-size: 20px;  
     }
     .stand_out{
         display: flex;
@@ -441,29 +435,12 @@ footer{
         text-align: start;
         width: 100%;
     }
-    .stand_out_paragraph h3{
-        font-size: 45px;
-        font-family: 'Fraunces';
-        font-weight: 900;
-        padding-top: 20px;
+   
+    .stand_out_content{
+        font-size: 18px;
+        width: 80%;
     }
-    .stand_out_paragraph p{
-        font-size: 19.5px;
-        padding-top: 13px;
-        line-height: 1.5;
-        padding: 16px;
-        font-family: 'Barlow';
-        font-weight: 600;
-        color: hsl(210, 4%, 67%);
-    }
-    .stand_out_paragraph a {
-        text-decoration: none;
-        color: black;
-        font-size: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
-        font-family: Fraunces;
-    }
+ 
     .design_photography{
         display: flex;
         justify-content: space-evenly;
@@ -482,7 +459,6 @@ footer{
     }
     .testimonial_para{
         font-size: 18px;
-        /* padding-inline: 30px; */
     }
    .real_egg_img{
        height: 100%;
